@@ -80,3 +80,6 @@ def delete_user(user_id: int):
     db.delete(db_user)
     db.commit()
     return {"message": "Usuario eliminado correctamente"}
+
+#correr el api, cambiando de puerto, en caso de que este siendo usado o no funcione
+# uvicorn main:app --reload --port 8001
